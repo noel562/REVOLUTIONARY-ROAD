@@ -1,0 +1,604 @@
+    /* General Body Styles */
+    body, .navbar {
+        font-family: 'Playfair', serif;
+        background-color: #F8F5F0;
+        color: #1A1A1A;
+    }
+
+    /* Navbar Styling */
+    .navbar-brand {
+        font-size: 1.75rem;
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #1A1A1A;
+    }
+
+    .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Container Styling */
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* Full-Width Title Bar */
+    .full-width-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        max-width: 100vw;
+        background-color: #F8F5F0;
+        color: #1A1A1A;
+        padding: 5px 20px;
+        margin: 0 auto;
+    }
+
+    /* H1 Styling */
+    .full-width-title h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 9vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        white-space: nowrap;
+    }
+
+    /* H6 Styling */
+    .full-width-title h5 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5vw;
+        font-weight: normal;
+        display: inline-block;
+        margin-top: -10px;
+        white-space: nowrap;
+        color: #C41E3A;
+    }
+
+    /* Image Container */
+    .image-container {
+        width: 100vw;
+        height: 28.75vw;
+        max-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: black;
+        margin-top: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 20px 10vw; /* Adds padding on both sides */
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px; /* Adds spacing between text and image */
+        flex-wrap: wrap; /* Ensures responsiveness */
+    }
+
+    /* Text Section */
+    .about-text {
+        flex: 1; /* Allows the text to take available space */
+        max-width: 600px; /* Shrinks paragraph width */
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    /* Image Section */
+    .about-image-container {
+        flex-shrink: 0; /* Prevents shrinking */
+        max-width: 300px; /* Limits image width */
+    }
+
+    .about-image {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7); /* Shadow on the right and down side */
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 50px;
+        background-color: #F8F5F0;
+        color: #1A1A1A;
+    }
+
+
+    /* Container for Movie Posters */
+/* Movies Section */
+    /* Movies Section */
+  /* Title Styling */
+.our-work-title {
+    text-align: center;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 20px;
+        font-size: 3rem;  /* Increased size */
+}
+
+/* Movies Section */
+.movies-section {
+    background-color: #000; /* Black Background */
+    padding: 40px 0;
+    
+}
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.movie-block {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin: auto;
+}
+
+.movie-block:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.movie-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(50%);
+    z-index: -1;
+    transition: filter 0.3s ease;
+}
+
+.movie-block:hover .movie-bg {
+    filter: blur(3px) brightness(70%);
+}
+
+.movie-block img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .movies-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .movies-container {
+        grid-template-columns: repeat(1, 1fr); /* One column for small screens */
+    }
+}
+
+/* Services Section */
+/* Services Section */
+/* Services Section */
+/* Services Section */
+/* Services Section */
+/* Services Section */
+/* Services Section */
+.services-section {
+    background-color: #F8F5F0; /* Match the body background color */
+    color: #1A1A1A; /* Match the body text color */
+    padding: 40px 10vw; /* Same padding as About Us section */
+}
+
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for Advertisements/Event Management and Films */
+    gap: 40px; /* Space between columns */
+    max-width: 1200px; /* Larger container to accommodate both columns */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Left Column - Advertisements and Event Management */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between Advertisements and Event Management */
+}
+
+/* Service Block */
+.service {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for text and image */
+    gap: 20px; /* Space between text and image */
+    align-items: center;
+    background-color: #fff; /* White background for contrast */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Alternate image position for criss-cross effect */
+.service.advertisement .service-image-container {
+    order: -1; /* Move image to the left for Advertisement */
+}
+
+.service.event-management .service-image-container {
+    order: 1; /* Move image to the right for Event Management */
+}
+
+/* Service Text */
+.service-text {
+    text-align: left; /* Align text to the left */
+}
+
+.service-text h2 {
+    font-size: 1.8rem; /* Slightly smaller heading */
+    margin-bottom: 10px;
+    color: #1A1A1A; /* Dark text for contrast */
+}
+
+.service-text p {
+    font-size: 1rem; /* Slightly smaller text */
+    line-height: 1.5; /* Maintain readability */
+    color: #555; /* Slightly lighter text for hierarchy */
+}
+
+/* Service Image */
+.service-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 250px; /* Smaller image size */
+    display: block;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for images */
+}
+
+/* Right Column - Films & Storytelling */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Films & Storytelling Section */
+.service.films-storytelling {
+    background-color: #fff; /* White background for contrast */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.service.films-storytelling:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Films & Storytelling Image */
+.service.films-storytelling .service-image {
+    max-width: 100%; /* Larger image for Films & Storytelling */
+    border-radius: 12px; /* Larger rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .service {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .service.advertisement .service-image-container,
+    .service.event-management .service-image-container {
+        order: 0; /* Reset order for small screens */
+    }
+}
+
+/* Wave Animation */
+/* Apply animation to movie cards */
+/* Wave Animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Apply animation to movie cards */
+.movie-block {
+    transition: transform 0.5s ease-in-out;
+}
+
+.movie-block.wave {
+    animation: wave 1.5s ease-in-out 3; /* Run animation 3 times */
+}
+/* Contact Section */
+/* Contact Section */
+.contact-container {
+    background-color: #000; /* Black Background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Equal spacing between CEO & Contact Info */
+    padding: 40px 10vw;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* CEO Section (Left Side) */
+.ceo-section {
+    flex: 1;
+    text-align: center;
+    min-width: 300px; /* Ensures proper layout on small screens */
+}
+
+.ceo-section img {
+    width: 180px; /* Reduce size slightly */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.ceo-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+/* Contact Info (Right Side) */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    min-width: 300px; /* Prevents shrinking */
+}
+
+.contact-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stacks items vertically */
+        text-align: center;
+        gap: 40px; /* Reduce spacing */
+    }
+
+    .contact-info {
+        text-align: center; /* Center text on small screens */
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #F8F5F0;
+    color: #1A1A1A;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Social Icons */
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.footer-icons a:hover img {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Award Section */
+/* Award Section */
+/* Award Section */
+/* Award Section */
+/* Award Section */
+.award-section {
+    background-color: #F8F5F0; /* Soft background color */
+    padding: 40px 10vw;
+    text-align: center;
+}
+
+/* Award Title */
+.award-title {
+    font-size: 3rem;  /* Increased size */
+    color: #1A1A1A;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Award Container */
+.award-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect - Slight Lift */
+.award-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Award Image Container */
+.award-image-container {
+    flex: 1;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+/* Award Image */
+.award-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect - Zoom */
+.award-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Award Text */
+.award-text {
+    flex: 2;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .award-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .award-title {
+        font-size: 2rem;
+    }
+
+    .award-text {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .award-image-container {
+        max-width: 100%;
+    }
+}
+
+/* Lightbox Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Image */
+.popup-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}

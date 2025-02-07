@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REVOLUTIONARY ROAD</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">REVOLUTIONARY ROAD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Full-Width H1 with H6 -->
+    <div class="full-width-title" id="home">
+        <h1  >REVOLUTIONARY ROAD</h1>
+        <h5>Filmmaking is the alchemy of blending sight, sound, and soul to create worlds that move hearts</h5>
+    </div>
+
+    <!-- Image Container -->
+    <div class="image-container">
+        <img src="images/pexels-fonok-403495.jpg" alt="">
+    </div>
+
+    <!-- About Section -->
+    <div class="container about-section" id="about">
+        <div class="about-content">
+            <!-- Text Column -->
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>Revolutionary Road LLP is an Advertising, Event Management, and Film Production company founded by a
+                    collective of indie filmmakers and freelance artists. The company specializes in crafting innovative
+                    campaigns, managing high-impact events, and producing compelling visual narratives. Their sessions include
+                    brainstorming creative strategies, hands-on workshops, networking opportunities, and expert-led discussions.</p>
+            </div>
+            
+            <!-- Image Column -->
+            <div class="about-image-container">
+                <img src="images/pexels-kianbakht-30453773.jpg" alt="About Us Image" class="about-image rounded">
+            </div>
+        </div>
+    </div>
+    <!-- Movie Section -->
+<div class="movies-section" >
+    <!-- <img src="C:\Users\noelj\christaneprj\pexels-hngstrm-3137890.jpg" alt=""> -->
+    <h1 class="our-work-title">Our Work</h1>
+    <div class="movies-container">
+        <div class="movie-block">
+            <div class="movie-bg" style="background-image: url('images/MV5BMzQ5YWQxNzUtOTNlOS00ODgwLWI1MGUtNDgxZDczNzY3MzY0XkEyXkFqcGc@._V1_FMjpg_UY2000_.jpg');"></div>
+            <img src="images/MV5BMzQ5YWQxNzUtOTNlOS00ODgwLWI1MGUtNDgxZDczNzY3MzY0XkEyXkFqcGc@._V1_FMjpg_UY2000_.jpg" alt="11 Seconds">
+            <div class="movie-title">11 Seconds (2022) - A Psychological Horror Short Film</div>
+        </div>
+
+        <div class="movie-block">
+            <div class="movie-bg" style="background-image: url('images/WhatsApp Image 2025-02-05 at 1.13.56 PM.jpeg');"></div>
+            <img src="images/WhatsApp Image 2025-02-05 at 1.13.56 PM.jpeg" alt="The NightFall">
+            <div class="movie-title">The NightFall (2025) - Upcoming Neo-Noir Psychological Horror Film</div>
+        </div>
+
+        <div class="movie-block">
+            <div class="movie-bg" style="background-image: url('images/WhatsApp Image 2025-02-05 at 1.15.56 PM.jpeg');"></div>
+            <img src="images/WhatsApp Image 2025-02-05 at 1.15.56 PM.jpeg" alt="Lost My Mind">
+            <div class="movie-title">Lost My Mind - Exter Ft. Aarya Janan (Music Video)</div>
+        </div>
+
+        <div class="movie-block">
+            <div class="movie-bg" style="background-image: url('images/WhatsApp Image 2025-02-05 at 1.15.22 PM.jpeg');"></div>
+            <img src="images/WhatsApp Image 2025-02-05 at 1.15.22 PM.jpeg" alt="A Colorful Heart">
+            <div class="movie-title">A Colorful Heart - Upcoming Neo-Noir Action Thriller Film</div>
+        </div>
+    </div>
+</div>
+<div class="award-section">
+    <h1 class="award-title">Updates</h1>
+    <div class="award-container">
+        <div class="award-image-container">
+            <img src="images/WhatsApp Image 2025-02-06 at 1.28.09 PM.jpeg" 
+                alt="Award Image" 
+                class="award-image"
+                onclick="openImagePopup(this.src)">
+        </div>
+        <div class="award-text">
+            <p>We are thrilled to announce that <strong>Lost My Mind</strong> has been officially selected for the <strong>Mumbai International Film Festival 2025!</strong></p>
+            <p>A heartfelt thank you to everyone who contributed to this project—your passion, creativity, and dedication have brought this vision to life. Your work continues to enrich the tapestry of storytelling, and we couldn't be more grateful to share this journey with you.</p>
+            <p>Here's to celebrating cinema and the incredible stories that connect us all!</p>
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox Popup -->
+<div id="image-popup" class="popup">
+    <span class="close-btn" onclick="closeImagePopup()">&times;</span>
+    <img id="popup-img" class="popup-img">
+</div>
+
+
+
+
+
+<!-- Services Section -->
+<div class="services-section" >
+    <h1>Our Services</h1>
+    <div class="services-container">
+        <!-- Left Column - Advertisements and Event Management -->
+        <div class="left-column">
+            <!-- Advertisement Service -->
+            <div class="service advertisement">
+                <div class="service-text">
+                    <h2>Advertisements</h2>
+                    <p>Corporate and commercial advertisements are served in a more cinematic, content-based manner.</p>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/advertising-981455_1280.jpg" alt="Advertisements" class="service-image">
+                </div>
+            </div>
+
+            <!-- Event Management Service -->
+            <div class="service event-management">
+                <div class="service-text">
+                    <h2>Event Management</h2>
+                    <p>Weddings, parties, and corporate events, managed with professional videography and photography.</p>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/wedding-1937022_1280.jpg" alt="Event Management" class="service-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Films & Storytelling -->
+        <div class="right-column">
+            <!-- Films & Storytelling Service -->
+            <div class="service films-storytelling">
+                <div class="service-text">
+                    <h2>Films & Storytelling</h2>
+                    <p>From films to music videos and stage performances, we craft stories with creative direction.</p>
+                </div>
+                <div class="service-image-container">
+                    <img src="images/pexels-cottonbro-3692625.jpg" alt="Films & Storytelling" class="service-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-container">
+    
+    <!-- Left: CEO Section -->
+    <div class="ceo-section">
+        <img src="images/WhatsApp Image 2025-02-05 at 1.27.05 PM.jpeg" alt="Christin N Bose">
+        <h3>Christin N Bose</h3>
+        <p>Filmmaker | CEO</p>
+    </div>
+
+    <!-- Right: Address Section -->
+    <div class="contact-info">
+        <h4>Address</h4>
+        <p>
+            Revolutionary Road<br>
+            JM Flats, Freedom Road<br>
+            Kaloor, Kochi<br><br>
+
+            <strong>Contact Us:</strong><br>
+            +91 7736867089<br>
+            +91 9745497089<br>
+            revolutionary.road@outlook.com<br>
+            revolutionaryroad.04@gmail.com
+        </p>
+    </div>
+
+</div> 
+<footer class="footer" id="contact" >
+    <p>&copy; REVOLUTIONARY ROAD | All Rights Reserved</p>
+
+    <div class="footer-icons">
+        <a href="https://www.instagram.com/rev_olutionaryroad?igsh=MTUxa3g2OXphNG8zbQ==" target="_blank">
+            <img src="images/png-clipart-instagram-icon-computer-icons-instagram-logo-area.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/christin-n-bose-07a1a62bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/images.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.imdb.com/search/title/?companies=co1099456&fbclid=PAY2xjawIQAIZleHRuA2FlbQIxMAABptiPCwWrylbcYMOc4ax91wxe-s12Jy_ruwZQvRsKfiJQlaXCQIIac6Ccag_aem_AEUyXAVFIKEea8LOC98X2w" target="_blank">
+            <img src="images/png-transparent-logo-imdb-film-logan-lerman-miscellaneous-celebrities-text-thumbnail.png" alt="IMDB">
+        </a>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
